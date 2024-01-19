@@ -3,11 +3,22 @@ html, body{
 }
 
 nav.nav-custom{
-    background-color: rgba(0, 0, 0, 0.604);
+    background-color: rgba(0, 0, 0, 0.923);
 }
 
 h1.h1-custom{
     color: aliceblue;
+}
+
+h2.h2-custom{
+    color: aliceblue;
+    line-height: 2em;
+}
+
+p.p-custom{
+    color: aliceblue;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 ul>.nav-item a.nav-link{
@@ -25,4 +36,13 @@ ul>.nav-item> .nav-link.active{
 ul>.nav-item> .nav-link.active:hover{
     background-color: rgba(92, 121, 147, 0.9);
 
+}
+
+.invisivel{
+    background-color: aliceblue;
+    height: 80px;
+}
+
+.carousel-item> div.slide-custom{
+    background-color: rgba(10, 20, 28, 0.592);
 }
