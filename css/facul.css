@@ -1,7 +1,28 @@
 html, body{
-    background: rgb(116, 227, 251);
+    background: url("/img/fundo.jpg")
 }
 
 nav.nav-custom{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.604);
+}
+
+h1.h1-custom{
+    color: aliceblue;
+}
+
+ul>.nav-item a.nav-link{
+    color: aliceblue;
+}
+
+ul>.nav-item a.nav-link:hover{
+    color: rgb(59, 178, 178);
+}
+
+ul>.nav-item> .nav-link.active{
+    background-color: rgb(92, 121, 147);
+}
+
+ul>.nav-item> .nav-link.active:hover{
+    background-color: rgba(92, 121, 147, 0.9);
+
 }
