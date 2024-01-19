@@ -1,0 +1,7 @@
+html, body{
+    background: rgb(116, 227, 251);
+}
+
+nav.nav-custom{
+    background-color: rgba(0, 0, 0, 0.7);
+}
