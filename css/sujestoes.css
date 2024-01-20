@@ -1,0 +1,37 @@
+body, html{
+    background-color: #160f29;
+}
+
+section{
+    background-color: #160f29;
+}
+
+div.container{
+    background: #0a1f4927;
+    margin-top: 100px;
+    width: 300px;
+    height: 400px;
+    border: 1px greenyellow solid;
+}
+
+div.login-container{
+    height: 200px;
+    width: 40%;
+    margin: auto;
+    margin-top: 30%;
+}
+
+input.form-control{
+    height: 1.7em;
+}
+
+/* text */
+label.form-label{
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1.h1-custom{
+    text-align: center;
+    color: rgb(183, 255, 0);
+}
