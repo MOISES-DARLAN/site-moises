@@ -3,6 +3,11 @@ html, body{
     background-color: #160f29;
 }
 
+div.invisivel{
+    height: 80px;
+}
+
+
 nav.nav-custom{
     background-color: rgba(0, 0, 0, 0.923);
 }
@@ -16,12 +21,17 @@ h1.h1-custom{
 h2.h2-custom{
     color: aliceblue;
     line-height: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 p.p-custom{
     color: aliceblue;
     padding-left: 2em;
     padding-right: 2em;
+}
+
+p.text-custom{
+    color: aliceblue;
 }
 
 /*---formatação de Links---*/
@@ -73,6 +83,9 @@ img.img-icon-custom{
     width: 80px;
 }
 
+section#tela-1{
+    background-color: #160f29;
+}
 
 footer{
     background-color: rgb(20, 20, 42);
