@@ -6,6 +6,8 @@ nav.nav-custom{
     background-color: rgba(0, 0, 0, 0.923);
 }
 
+
+/*Tipografia*/
 h1.h1-custom{
     color: aliceblue;
 }
@@ -20,6 +22,8 @@ p.p-custom{
     padding-left: 2em;
     padding-right: 2em;
 }
+
+/*formatação de Links*/
 
 ul>.nav-item a.nav-link{
     color: aliceblue;
@@ -38,6 +42,21 @@ ul>.nav-item> .nav-link.active:hover{
 
 }
 
+a.card-link-custom{
+    text-align: center;
+    color: rgb(255, 0, 179);
+    text-decoration: none;
+    width: 100px;
+    padding-left: 10px;
+}
+
+a.card-link-custom:hover{
+    color: rgb(134, 29, 29);
+    border: 1px solid rgba(255, 0, 0, 0.143);
+    border-radius: 20px;
+    width: 100px;
+}
+
 .invisivel{
     background-color: aliceblue;
     height: 80px;
@@ -46,3 +65,14 @@ ul>.nav-item> .nav-link.active:hover{
 .carousel-item> div.slide-custom{
     background-color: rgba(10, 20, 28, 0.592);
 }
+
+div.card-width{
+    width: 210px;
+    margin: 0px;
+}
+
+section.conteudo{
+
+}
+
+.container-conteudo
