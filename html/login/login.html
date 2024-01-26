@@ -41,17 +41,17 @@
         <p class="title">Login</p>
         <form class="form">
             <div class="input-group">
-                <label for="username">Nome de usuário</label>
+                <label for="username" id="user_name">Nome de usuário</label>
                 <input type="text" name="username" id="username" placeholder="">
             </div>
             <div class="input-group">
                 <label for="password">Senha</label>
                 <input type="password" name="password" id="password" placeholder="">
                 <div class="forgot">
-                    <a rel="noopener noreferrer" href="#">Esqueceu a senha?</a>
+                    <a rel="noopener noreferrer" href="#" id="senha">Esqueceu a senha?</a>
                 </div>
             </div>
-            <button class="sign"><a href="/html/Home/startbootstrap-shop-homepage-gh-pages/index.html" class="nav-link">Fazer login</a></button>
+            <button class="sign"><a  class="nav-link" id="login">Fazer login</a></button>
         </form>
         <div class="social-message">
             <div class="line"></div>
@@ -81,7 +81,8 @@
     </div>
 </section>
 
-
+    <script src="/html/login/js/login_validation.js
+    "></script>
     
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
