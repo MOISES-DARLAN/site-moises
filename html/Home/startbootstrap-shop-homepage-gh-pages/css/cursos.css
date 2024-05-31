@@ -1,0 +1,124 @@
+:root{
+    --bs-body-bg: #160f29;
+    --bs-body-color: #fff;
+}
+
+html, body{
+    background: url("/img/fundo.jpg");
+    background-color: #160f29;
+}
+
+body{
+    padding-top: 90px;
+}
+
+div.invisivel{
+    height: 80px;
+}
+
+
+nav.nav-custom{
+    background-color: rgba(0, 0, 0, 0.923);
+}
+
+
+/*Tipografia*/
+h1.h1-custom{
+    color: aliceblue;
+}
+
+h2.h2-custom{
+    color: aliceblue;
+    line-height: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p.p-custom{
+    color: aliceblue;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+p.text-custom{
+    color: aliceblue;
+}
+
+/*---formatação de Links---*/
+
+ul>.nav-item a.nav-link{
+    color: aliceblue;
+}
+
+ul>.nav-item a.nav-link:hover{
+    color: rgb(59, 178, 178);
+}
+
+ul>.nav-item> .nav-link.active{
+    background-color: rgb(92, 121, 147);
+}
+
+ul>.nav-item> .nav-link.active:hover{
+    background-color: rgba(92, 121, 147, 0.9);
+}
+
+.video-cursos{
+    padding-top: 30px;
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#qrcode-pix {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: aliceblue;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    color: #160f29;
+}
+
+.close{
+    width: 100%;
+    text-align: center;
+}
+
+.close button{
+    background-color: #cf1010;
+    color: aliceblue;
+    border: #160f29 1px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#copyButton{
+    background-color: #139ed9;
+}
+
+footer{
+    background-color: #160f29;
+}
