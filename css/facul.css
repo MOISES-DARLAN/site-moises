@@ -1,28 +1,31 @@
+:root{
+    --bs-nav-bg: #000104;
+    --bs-body-color: #fff;
+    --bs-tela-1-bg: #08131F;
+    --bs-tela-2-bg: #160F29;
+}
+
+.teste{
+    background-color: #cb2323;
+}
+
 html, body{
     background: url("/img/fundo.jpg");
     background-color: #160f29;
 }
-
-div.invisivel{
-    height: 80px;
-}
-
-
 nav.nav-custom{
-    background-color: rgba(0, 0, 0, 0.923);
+    background-color: var(--bs-nav-bg);
 }
-
 
 /*Tipografia*/
 h1.h1-custom{
     color: aliceblue;
+    font-weight: bold;
 }
 
 h2.h2-custom{
     color: aliceblue;
-    line-height: 2em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+    font-weight: bold;}
 
 p.p-custom{
     color: aliceblue;
@@ -84,9 +87,32 @@ img.img-icon-custom{
 }
 
 section#tela-1{
-    background-color: #160f29;
+    background: rgb(8,19,31);
+    background: linear-gradient(0deg, rgba(8,19,31,1) 83%, rgba(34,80,133,1) 100%);
 }
 
+.video{
+    min-height: 75vh;
+    width: 100%;
+
+}
+
+.video-principal{    
+    min-height: 75vh;
+    width: auto;
+    height: auto;  
+}
+
+section#tela-2{ 
+    background-color: var(--bs-tela-2-bg);
+}
+
+.img-mockup{
+    max-width: 500px;
+    max-height: 615px;
+    margin-left: 20%;
+    rotate: 20deg;
+}
 footer{
     background-color: rgb(20, 20, 42);
 }
