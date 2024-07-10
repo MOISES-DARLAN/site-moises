@@ -3,6 +3,7 @@
     --bs-body-color: #fff;
     --bs-tela-1-bg: #08131F;
     --bs-tela-2-bg: #160F29;
+    --bs-btn-bg: #160F29;
 }
 
 .teste{
@@ -27,64 +28,43 @@ h2.h2-custom{
     color: aliceblue;
     font-weight: bold;}
 
-p.p-custom{
-    color: aliceblue;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-p.text-custom{
-    color: aliceblue;
-}
-
 /*---formatação de Links---*/
 
 ul>.nav-item a.nav-link{
     color: aliceblue;
 }
 
-ul>.nav-item a.nav-link:hover{
-    color: rgb(59, 178, 178);
+.btn-entrar{
+    background-color: var(--bs-nav-bg);
+    border: #fff 1px solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
 }
 
-ul>.nav-item> .nav-link.active{
-    background-color: rgb(92, 121, 147);
+.btn-entrar:hover{
+    background-color: rgba(92, 121, 147, 0.9);}
+
+.btn-cursos{
+    background-color: var(--bs-btn-bg);
+    font-weight: bold;
+    border: #fff 1px solid;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-ul>.nav-item> .nav-link.active:hover{
-    background-color: rgba(92, 121, 147, 0.9);
-}
 
-a.card-link-custom{
-    text-align: center;
-    color: rgb(255, 0, 179);
-    text-decoration: none;
-    width: 100px;
-    padding-left: 10px;
-}
 
-a.card-link-custom:hover{
-    color: rgb(134, 29, 29);
-    border-bottom: 1px solid rgba(255, 0, 0, 0.46);
-    border-left: 1px solid rgba(255, 0, 0, 0.43);
-}
-.carousel-item> div.slide-custom{
-    background-color: rgb(127, 159, 147);
-}
+
+
+
 
 /*imagens*/
-img.img-perfil-card{
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-    margin-right: 20px;
-    padding: 10px;
-}
 
-img.img-icon-custom{
-    height: 50px;
-    width: 80px;
-}
+
+
 
 section.tela-1{
     background: rgb(8,19,31);
@@ -112,9 +92,8 @@ section.tela-3{
 }
 
 .img-mockup{
-    max-width: 500px;
+  
     max-height: 615px;
-    margin-left: 20%;
     rotate: 20deg;
 }
 
@@ -134,119 +113,4 @@ div.footer-custom{
 
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-    h5.card-title{
-        font-size: 1em;
-    }
-
-    p.card-text{
-        font-size: small;
-        text-align: justify;
-    }
- }
-
-/* `md` applies to small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {
-    h5.card-title{
-        font-size: 2rem;
-    }
-
-    p.card-text{
-        font-size: small;
-        text-align: justify;
-    }
-}
-
-/*// `lg` applies to medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {
-    h5.card-title{
-        font-size: 1em;
-    }
-
-    p.card-text{
-        font-size: small;
-        text-align: justify;
-    }
- }
-
-/*// `xl` applies to large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) {
-    h5.card-title{
-        font-size: 1em;
-    }
-
-    p.card-text{
-        font-size: small;
-        text-align: justify;
-    }
- }
-
-/*// `xxl` applies to x-large devices (large desktops, less than 1400px)*/
-
-/* cards */
-
-img.img-card{
-    width: 100%;
-    height: 80%;
-    border-radius: 20px 20px 0px 0px;
-}
-
-  
-  .card_box {
-    width: 200px;
-    height: 250px;
-    border-radius: 20px;
-    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
-    position: relative;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
-    cursor: pointer;
-    transition: all .3s;
-    margin: auto;
-    justify-content: space-around;
-  }
-  
-  .card_box:hover {
-    transform: scale(0.9);
-  }
-  
-  .card_box span {
-    position: absolute;
-    overflow: hidden;
-    width: 150px;
-    height: 150px;
-    top: -10px;
-    left: -10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card_box span::before {
-    content: 'Brevemente';
-    position: absolute;
-    width: 150%;
-    height: 40px;
-    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
-    transform: rotate(-45deg) translateY(-20px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
-  }
-  
-  .card_box span::after {
-    content: 'moises';
-    position: absolute;
-    width: 10px;
-    bottom: 0;
-    left: 0;
-    height: 10px;
-    z-index: -1;
-    box-shadow: 140px -140px #cc3f47;
-    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
-  }
 
