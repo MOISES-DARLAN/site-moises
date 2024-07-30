@@ -53,6 +53,7 @@ async function getProductsById(data) {
 
 async function acessToServer(pulo) {
 
+
     try {    
         const bd = await getProducts("MDCURSOSFREE", pulo);
         const cursos = await getProductsById(bd);
@@ -92,10 +93,11 @@ function carregarDepoimentos(data) {
     </div>`;
 }
 
-function loading() {
-  for (let i = 0; i < 6; i++) {
+function loading(numCards = 8) {
+  for (let i = 0; i < numCards; i++) {
     $depoimentos.innerHTML += `
-    <div class="card col mb-5 mx-3 py-5 loading" aria-hidden="true">
+     <div class="col mb-5">
+    <div class="card h-100 mb-5 mx-1  loading" aria-hidden="true">
                         
                         <div class="card-body">
                           <h5 class="card-title placeholder-glow">
@@ -110,7 +112,8 @@ function loading() {
                           </p>
                           <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
                         </div>
-                      </div>`
+                      </div>
+                      </div>`;
 
 }
 
@@ -124,5 +127,6 @@ function removeLoading() {
 }
 
 $carregarMais.addEventListener("click", () => {
+  loading(4);
   acessToServer(totalCursosCarregados);
 });
