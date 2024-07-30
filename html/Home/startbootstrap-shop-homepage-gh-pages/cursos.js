@@ -1,13 +1,14 @@
 let $depoimentos = document.querySelector("#cursos");
 let $carregarMais = document.querySelector("#carregarMais");
+let totalCursosCarregados = 0
 loading();
-acessToServer();
+acessToServer(0);
 
 
 
 
 async function getProducts(category, pulo=0) {
-  const url = `https://demo-project34821.p.rapidapi.com/catalog/category/${category}/products?skip=${pulo}&limit=12`;
+  const url = `https://demo-project34821.p.rapidapi.com/catalog/category/${category}/products?skip=${pulo}&limit=4`;
   const options = {
     method: "GET",
     headers: {
@@ -20,6 +21,7 @@ async function getProducts(category, pulo=0) {
     const response = await fetch(url, options);
     const result = await response.json();
     const data = result.products;
+    totalCursosCarregados += 4
     return data;
   } catch (error) {
     console.error(error);
@@ -121,3 +123,6 @@ function removeLoading() {
   })
 }
 
+$carregarMais.addEventListener("click", () => {
+  acessToServer(totalCursosCarregados);
+});
