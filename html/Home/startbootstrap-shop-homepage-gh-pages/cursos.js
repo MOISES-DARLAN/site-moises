@@ -1,11 +1,13 @@
 let $depoimentos = document.querySelector("#cursos");
 let $carregarMais = document.querySelector("#carregarMais");
 let totalCursosCarregados = 0
-loading();
-acessToServer(0);
+main()
 
-
-
+function main() {
+  loading();
+  acessToServer(0);
+  acessToServer(4);
+}
 
 async function getProducts(category, pulo=0) {
   const url = `https://demo-project34821.p.rapidapi.com/catalog/category/${category}/products?skip=${pulo}&limit=4`;
@@ -73,8 +75,8 @@ async function acessToServer(pulo) {
 function carregarDepoimentos(data) {
   console.log(data);
   $depoimentos.innerHTML += `
-    <div class="col mb-5">
-      <div class="card h-100">
+    <div class="col mb-5 pt-3">
+      <div class="card h-100 curso">
         <!-- Product image-->
         <img class="card-img-top" src="${data.manufacturer}" alt="..." />
         <!-- Product details-->
@@ -96,8 +98,8 @@ function carregarDepoimentos(data) {
 function loading(numCards = 8) {
   for (let i = 0; i < numCards; i++) {
     $depoimentos.innerHTML += `
-     <div class="col mb-5">
-    <div class="card h-100 mb-5 mx-1  loading" aria-hidden="true">
+     <div class="col mb-5 loading">
+    <div class="card h-100 mb-5 mx-1 " aria-hidden="true">
                         
                         <div class="card-body">
                           <h5 class="card-title placeholder-glow">
@@ -122,7 +124,7 @@ function loading(numCards = 8) {
 function removeLoading() {
   const cards = document.querySelectorAll(".loading");
   cards.forEach((card) => {
-    card.classList.add('d-none');
+    card.classList.add('d-hidden');
   })
 }
 

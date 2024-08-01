@@ -39,6 +39,7 @@ ul>.nav-item a.nav-link{
     border: #fff 1px solid;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: 10px;
     font-weight: bold;
 }
 
@@ -48,6 +49,7 @@ ul>.nav-item a.nav-link{
 .btn-cursos{
     background-color: var(--bs-btn-bg);
     font-weight: bold;
+    margin-top: 3px ;
     border: #fff 1px solid;
     border-radius: 8px;
     margin-left: 10px;

@@ -38,10 +38,10 @@ const navLoad = ` <div class="container">
                          >
                               <ul class="navbar-nav ms-auto nav-pills text-center">
                                    <li class="nav-item ">
-                                        <a href="index.html" class="nav-link btn-entrar">Entrar</a>
+                                        <a href="index.html" class="nav-link btn-entrar mt-2">Entrar</a>
                                    </li>
 
-                                   <li class="nav-item btn-cursos">
+                                   <li class="nav-item btn-cursos mt-2">
                                         <a href="/html/home/startbootstrap-shop-homepage-gh-pages/index.html" class="nav-link">Cursos</a>
                                    </li>
                               </ul>
